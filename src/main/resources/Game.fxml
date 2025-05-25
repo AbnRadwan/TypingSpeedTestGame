@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.GameController">
+
+    <Label fx:id="usernameLabel" />
+    <Label fx:id="modeLabel" />
+    <Label fx:id="timerLabel" text="Time: 60s" style="-fx-font-size: 16px;" />
+    <Label fx:id="wordLabel" text="Get ready..." style="-fx-font-size: 20px;" />
+    <TextField fx:id="inputField" onAction="#handleInput" promptText="Type here..." />
+    <Label fx:id="scoreLabel" text="Score: 0" />
+    <Button text="Back to Menu" onAction="#goBack" />
+</VBox>
